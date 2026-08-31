@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum | Schulgeld steuerlich absetzen</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="gate" id="access-gate">
+        <div class="gate-card">
+          <p class="eyebrow">Zugang anfordern</p>
+          <h2>Impressum erst nach Angabe von Name und E-Mail anzeigen.</h2>
+          <p class="lead">
+            Bitte nenne zuerst deinen Namen und deine E-Mail-Adresse.
+          </p>
+          <form
+            class="gate-form"
+            id="access-gate-form"
+            data-endpoint="https://formsubmit.co/ajax/igor@hungema.com"
+          >
+            <label class="field">
+              <span>Name</span>
+              <input type="text" id="gate-name" name="name" autocomplete="name" placeholder="Vor- und Nachname" required />
+            </label>
+            <label class="field">
+              <span>E-Mail</span>
+              <input type="email" id="gate-email" name="email" autocomplete="email" placeholder="name@beispiel.at" required />
+            </label>
+            <input type="hidden" name="_subject" value="Impressum angefordert" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_url" value="https://www.schulgeld-steuerfrei.at/impressum.html" />
+            <input type="hidden" name="_replyto" value="" id="gate-replyto" />
+            <button class="button button-primary" type="submit">Impressum anzeigen</button>
+            <p class="gate-note">
+              Nach dem Absenden wird das Impressum freigeschaltet und die Angabe an
+              `igor@hungema.com` übermittelt.
+            </p>
+            <p class="gate-state" id="gate-state" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <div class="site-content is-locked" id="site-content" aria-hidden="true">
+        <section class="section">
+          <p class="section-kicker">Impressum</p>
+          <h1>Angaben folgen</h1>
+          <p>
+            Die verantwortliche Person und die vollständigen Anbieterangaben werden
+            hier ergänzt.
+          </p>
+          <p>
+            Bis dahin bitte Anfragen an `igor@hungema.com`.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-secondary" href="./index.html">Zurück zur Startseite</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

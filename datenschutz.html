@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutz | Schulgeld steuerlich absetzen</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="gate" id="access-gate">
+        <div class="gate-card">
+          <p class="eyebrow">Zugang anfordern</p>
+          <h2>Datenschutzhinweise erst nach Angabe von Name und E-Mail anzeigen.</h2>
+          <p class="lead">
+            Bitte nenne zuerst deinen Namen und deine E-Mail-Adresse.
+          </p>
+          <form
+            class="gate-form"
+            id="access-gate-form"
+            data-endpoint="https://formsubmit.co/ajax/igor@hungema.com"
+          >
+            <label class="field">
+              <span>Name</span>
+              <input type="text" id="gate-name" name="name" autocomplete="name" placeholder="Vor- und Nachname" required />
+            </label>
+            <label class="field">
+              <span>E-Mail</span>
+              <input type="email" id="gate-email" name="email" autocomplete="email" placeholder="name@beispiel.at" required />
+            </label>
+            <input type="hidden" name="_subject" value="Datenschutzhinweise angefordert" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_url" value="https://www.schulgeld-steuerfrei.at/datenschutz.html" />
+            <input type="hidden" name="_replyto" value="" id="gate-replyto" />
+            <button class="button button-primary" type="submit">Datenschutz anzeigen</button>
+            <p class="gate-note">
+              Nach dem Absenden wird die Datenschutzerklärung freigeschaltet und die
+              Angabe an `igor@hungema.com` übermittelt.
+            </p>
+            <p class="gate-state" id="gate-state" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <div class="site-content is-locked" id="site-content" aria-hidden="true">
+        <section class="section">
+          <p class="section-kicker">Datenschutz</p>
+          <h1>Vorläufige Hinweise</h1>
+          <p>
+            Diese Seite ist eine vorläufige Informationsseite. Bei der Eingabe von Name
+            und E-Mail auf dieser Rechtsseite werden die Angaben an `igor@hungema.com`
+            übermittelt, um den Zugriff freizuschalten.
+          </p>
+          <p>
+            Weitere Angaben zu Verantwortlichem, Zweck, Rechtsgrundlage, Speicherdauer
+            und Betroffenenrechten werden hier ergänzt.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-secondary" href="./index.html">Zurück zur Startseite</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

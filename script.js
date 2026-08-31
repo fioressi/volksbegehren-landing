@@ -8,7 +8,7 @@ const gateState = document.getElementById("gate-state");
 const gate = document.getElementById("access-gate");
 const siteContent = document.getElementById("site-content");
 
-const accessStorageKey = "volksbegehren-landing-access";
+const accessStorageKey = `volksbegehren-landing-access:${window.location.pathname}`;
 
 function unlockContent() {
   if (siteContent) {

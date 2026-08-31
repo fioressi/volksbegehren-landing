@@ -19,59 +19,6 @@
   </head>
   <body>
     <div class="page-shell">
-      <section class="gate" id="access-gate">
-        <div class="gate-card">
-          <p class="eyebrow">Zugang anfordern</p>
-          <h2>Inhalt erst nach Angabe von Name und E-Mail anzeigen.</h2>
-          <p class="lead">
-            Wer die Inhalte dieser Vorbereitungsseite sehen will, muss zuerst Name und
-            E-Mail-Adresse bekannt geben.
-          </p>
-          <form
-            class="gate-form"
-            id="access-gate-form"
-            data-endpoint="https://formsubmit.co/ajax/igor@hungema.com"
-          >
-            <label class="field">
-              <span>Name</span>
-              <input
-                type="text"
-                id="gate-name"
-                name="name"
-                autocomplete="name"
-                placeholder="Vor- und Nachname"
-                required
-              />
-            </label>
-            <label class="field">
-              <span>E-Mail</span>
-              <input
-                type="email"
-                id="gate-email"
-                name="email"
-                autocomplete="email"
-                placeholder="name@beispiel.at"
-                required
-              />
-            </label>
-            <input type="hidden" name="_subject" value="Volksbegehren Landingpage: neuer Interessent" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_url" value="https://www.schulgeld-steuerfrei.at/" />
-            <input type="hidden" name="_replyto" value="" id="gate-replyto" />
-            <button class="button button-primary" type="submit">
-              Inhalte anzeigen
-            </button>
-            <p class="gate-note">
-              Nach dem Absenden wird der Inhalt freigeschaltet und die Angabe an
-              `igor@hungema.com` übermittelt.
-            </p>
-            <p class="gate-state" id="gate-state" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-
-      <div class="site-content is-locked" id="site-content" aria-hidden="true">
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Volksbegehren in Vorbereitung</p>
@@ -410,17 +357,16 @@
         <div>
           <strong>Vorläufige Informationsseite</strong>
           <p>
-            Platzhalter für Impressum, Datenschutz und Kontakt. Angaben zur
-            verantwortlichen Person sowie zur Datenverarbeitung folgen mit der
-            amtlichen Registrierung.
+            Informationsseite zur Vorbereitung eines Volksbegehrens.
           </p>
         </div>
         <div class="footer-meta">
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Datenschutz</a>
           <span>Stand: 30. August 2026</span>
           <span>Volksbegehren in Vorbereitung</span>
         </div>
       </footer>
-      </div>
     </div>
 
     <script src="./script.js"></script>
