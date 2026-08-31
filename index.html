@@ -27,7 +27,11 @@
             Wer die Inhalte dieser Vorbereitungsseite sehen will, muss zuerst Name und
             E-Mail-Adresse bekannt geben.
           </p>
-          <form class="gate-form" id="access-gate-form">
+          <form
+            class="gate-form"
+            id="access-gate-form"
+            data-endpoint="https://formsubmit.co/ajax/igor@hungema.com"
+          >
             <label class="field">
               <span>Name</span>
               <input
@@ -50,12 +54,17 @@
                 required
               />
             </label>
+            <input type="hidden" name="_subject" value="Volksbegehren Landingpage: neuer Interessent" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_url" value="https://www.schulgeld-steuerfrei.at/" />
+            <input type="hidden" name="_replyto" value="" id="gate-replyto" />
             <button class="button button-primary" type="submit">
               Inhalte anzeigen
             </button>
             <p class="gate-note">
-              Mit dem Absenden bestätigst du, dass deine Angaben für Informationen zur
-              Initiative verwendet werden dürfen.
+              Nach dem Absenden wird der Inhalt freigeschaltet und die Angabe an
+              `igor@hungema.com` übermittelt.
             </p>
             <p class="gate-state" id="gate-state" aria-live="polite"></p>
           </form>
